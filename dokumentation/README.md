@@ -16,7 +16,7 @@ Wenn du die Dokumentation lokal auf deinem Rechner einsehen möchtest, kannst du
    ```bash
    pip install mkdocs
 
-2. Der Befehl gibt eine Adresse wider, die man im Browser öffnen kann.
+2. Im BAZI_docs Ordner ausgeführt gibt der Befehl eine Adresse wider, die man im Browser öffnen kann.
 
    ```bash
    mkdocs serve

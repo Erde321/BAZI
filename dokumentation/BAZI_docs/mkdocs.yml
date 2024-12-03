@@ -9,10 +9,16 @@ nav:
   - Start:
       - Home: index.md                   # Navigation zur Hauptseite (index.md)
       - Einrichtung in Visual Studio Code: einrichtung_vscode.md
+  - Eclipse Dateien:
+      - Ursprung als Eclipse Projekt: ursprung_eclipse.md #TODO
+      - .project: eclipse.project.md #TODO
+      - .classpath: eclipse.classpath.md #TODO
+      - .settings: eclipse.settings.md #TODO
   - Maven:
       - Was ist Maven?: maven.md
       - pom.xml: pom_xml.md
-      - jar.xml: jar_xml.md          # Untereintrag für 'Maven und pom.xml'
+      - jar.xml: jar_xml.md          
+
 
 
 markdown_extensions:
