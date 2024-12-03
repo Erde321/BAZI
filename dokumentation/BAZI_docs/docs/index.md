@@ -21,6 +21,10 @@ Das Programm BAZI wurde ursprünglich unter der Leitung von **Prof. Dr. Friedric
 
 ---
 
+## Version
+
+Diese Dokumentation bezieht sich auf die Version 2024.02.
+
 ## Ursprung der Dokumentation
 
 Die ursprüngliche Version der Dokumentation wurde von **Erdjihan Shakirov** erstellt und kann unter [Github](https://github.com/Erde321/BAZI) eingesehen werden.

@@ -6,8 +6,14 @@ theme:
   name: readthedocs                  # Das Design (Theme), in diesem Fall das Read the Docs-Design
 
 nav:
-  - Home: index.md                   # Navigation zur Hauptseite (index.md)
-  - Einrichtung in Visual Studio Code: einrichtung_vscode.md
+  - Start:
+      - Home: index.md                   # Navigation zur Hauptseite (index.md)
+      - Einrichtung in Visual Studio Code: einrichtung_vscode.md
+  - Maven:
+      - Was ist Maven?: maven.md
+      - pom.xml: pom_xml.md
+      - jar.xml: jar_xml.md          # Untereintrag für 'Maven und pom.xml'
+
 
 markdown_extensions:
   - admonition                       # Erweiterungen wie Hinweisboxen, z.B. für wichtige Informationen
