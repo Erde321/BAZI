@@ -1,0 +1,25 @@
+site_name: BAZI Dokumentation          # Der Name der Website
+site_url: https://bitbucket.org/bazi/bazi/src/master/  # Die URL der Projekt-Homepage (GitHub/Bitbucket)
+site_description: Dokumentation für das BAZI-Projekt  # Eine kurze Beschreibung der Seite
+
+theme:
+  name: readthedocs                  # Das Design (Theme), in diesem Fall das Read the Docs-Design
+
+nav:
+  - Home: index.md                   # Navigation zur Hauptseite (index.md)
+  - Einrichtung in Visual Studio Code: einrichtung_vscode.md
+
+markdown_extensions:
+  - admonition                       # Erweiterungen wie Hinweisboxen, z.B. für wichtige Informationen
+  - codehilite                        # Codehervorhebung
+  - toc                               # Eine automatisch generierte Tabelle des Inhalts
+
+plugins:
+  - search                            # Das Search-Plugin für die integrierte Suchfunktion
+
+extra:
+  social:
+    - type: github
+      link: https://bitbucket.org/bazi/bazi/src/master/  # Link zum GitHub- oder Bitbucket-Projekt
+
+
