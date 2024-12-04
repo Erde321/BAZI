@@ -1,5 +1,5 @@
 site_name: BAZI Dokumentation          # Der Name der Website
-site_url: https://bitbucket.org/bazi/bazi/src/master/  # Die URL der Projekt-Homepage (GitHub/Bitbucket)
+site_url: https://bitbucket.org/bazi/bazi/src/master/ # Die URL der Projekt-Homepage (GitHub/Bitbucket)
 site_description: Dokumentation für das BAZI-Projekt  # Eine kurze Beschreibung der Seite
 
 theme:
@@ -7,17 +7,24 @@ theme:
 
 nav:
   - Start:
-      - Home: index.md                   # Navigation zur Hauptseite (index.md)
-      - Einrichtung in Visual Studio Code: einrichtung_vscode.md
+      - Home: index.md                   # Ist nicht in start_dateien, da sonst die mainpage nicht angezeigt wird
+      - Einrichtung in Visual Studio Code: start_dateien/einrichtung_vscode.md
   - Eclipse Dateien:
-      - Ursprung als Eclipse Projekt: ursprung_eclipse.md #TODO
-      - .project: eclipse.project.md #TODO
-      - .classpath: eclipse.classpath.md #TODO
-      - .settings: eclipse.settings.md #TODO
+      - Ursprung als Eclipse Projekt: eclipse_dateien/ursprung_eclipse.md
+      - .project: eclipse_dateien/eclipse.project.md 
+      - .classpath: eclipse_dateien/eclipse.classpath.md
+      - .settings Ordner: 
+          - .settings: eclipse_dateien/settings_dateien/eclipse.settings.md
+          - org.eclipse.core.resources.prefs: eclipse_dateien/settings_dateien/org.eclipse.core.resources.prefs.md
+          - org.eclipse.core.runtime.prefs: eclipse_dateien/settings_dateien/org.eclipse.core.runtime.prefs.md
+          - org.eclipse.jdt.apt.core.prefs: eclipse_dateien/settings_dateien/org.eclipse.jdt.apt.core.prefs.md
+          - org.eclipse.jdt.core.prefs: eclipse_dateien/settings_dateien/org.eclipse.jdt.core.prefs.md
+          - org.eclipse.jdt.ui.prefs: eclipse_dateien/settings_dateien/org.eclipse.jdt.ui.prefs.md
+          - org.eclipse.m2e.core.prefs: eclipse_dateien/settings_dateien/org.eclipse.m2e.core.prefs.md
   - Maven:
-      - Was ist Maven?: maven.md
-      - pom.xml: pom_xml.md
-      - jar.xml: jar_xml.md          
+      - Was ist Maven?: maven_dateien/maven.md
+      - pom.xml: maven_dateien/pom_xml.md
+      - jar.xml: maven_dateien/jar_xml.md          
 
 
 
@@ -33,5 +40,6 @@ extra:
   social:
     - type: github
       link: https://bitbucket.org/bazi/bazi/src/master/  # Link zum GitHub- oder Bitbucket-Projekt
+
 
 

@@ -1,3 +1,6 @@
 /projekt/target/
 /dokumentation/BAZI_docs/site
 *.html
+/befehle
+/notizen
+/tests

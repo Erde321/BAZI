@@ -36,7 +36,7 @@ Um das Java-Projekt in Visual Studio Code zu bearbeiten, musst du die passende E
 1. Öffne Visual Studio Code und gehe zum **Extensions**-Tab (Sidebar auf der linken Seite).
 2. Suche nach **"Extension Pack for Java"** und installiere das Paket.
    
-   ![Extension Pack for Java](img/install_java_extension.png)
+   ![Extension Pack for Java](../img/start_dateien_img/install_java_extension.png)
 
 ## 5. Maven herunterladen und entpacken
 
@@ -46,7 +46,7 @@ Für das BAZI-Projekt benötigst du Apache Maven, um das Projekt zu bauen und zu
    [Maven Download](https://maven.apache.org/download.cgi)
 2. Entpacke das heruntergeladene ZIP-Archiv. Du kannst es in einen Ordner innerhalb des BAZI-Projekts entpacken.
 
-   ![Maven Entpacken](img/maven_entpacken.png)
+   ![Maven Entpacken](../img/start_dateien_img/maven_entpacken.png)
 
 ## 6. Maven Executable Path in Visual Studio Code konfigurieren
 
@@ -56,7 +56,7 @@ Nun musst du den **Maven Executable Path** in Visual Studio Code angeben:
 2. Suche nach **"Maven"** und finde den Abschnitt **Maven: Executable Path**.
 3. Setze den Pfad auf das Verzeichnis, in dem du Maven entpackt hast. Der Pfad zur `mvn`-Datei befindet sich im entpackten Ordner unter `bin`.
 
-   ![Maven Executable Path](img/maven_executable_path.png)
+   ![Maven Executable Path](../img/start_dateien_img/maven_executable_path.png)
 
 ## 7. Projekt in Visual Studio Code öffnen
 
@@ -80,7 +80,7 @@ Wenn du eine `.jar`-Datei erstellen möchtest, kannst du Maven verwenden:
    - **clean**: Entfernt bereits bestehende `.jar`-Dateien.
    - **package**: Erstellt eine neue `.jar`-Datei.
 
-   ![Maven Clean and Package](img/maven_clean_package.png)
+   ![Maven Clean and Package](../img/start_dateien_img/maven_clean_package.png)
 
 4. Die erstellte `.jar`-Datei findest du im `target`-Ordner des Projekts.
 
