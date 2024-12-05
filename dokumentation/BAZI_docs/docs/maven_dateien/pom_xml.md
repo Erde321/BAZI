@@ -108,7 +108,7 @@ Dieses Dokument beschreibt, wie das Projekt **BAZI** mit Maven gebaut wird. Mave
 - **`modelVersion`**: Gibt die Version des Maven-Modells an, hier `4.0.0`.
 - **`groupId`**: Identifiziert die Organisation oder das Projekt eindeutig, z. B. `bazi`.
 - **`artifactId`**: Der Name des generierten Artefakts (z. B. der `.jar`-Datei). Dies ist der spezifische Name des Projekts.
-- **`version`**: Gibt die Version des Projekts an, z. B. `2024.02`.
+- **`version`**: Gibt die Version des Projekts an, z. B. `2024.02`. Sollte die Zeichenkette für die Version **"-b-"** enthalten, dann wird nach der start.java main-Funktion eine .jar mit Maven erstell, die ein zusätzliches Fenster mit log-Daten öffnet.
 
 ---
 

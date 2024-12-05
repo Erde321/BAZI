@@ -4,6 +4,8 @@ site_description: Dokumentation für das BAZI-Projekt  # Eine kurze Beschreibung
 
 theme:
   name: readthedocs                  # Das Design (Theme), in diesem Fall das Read the Docs-Design
+  features:
+    - content.width.full
 
 nav:
   - Start:
@@ -24,7 +26,14 @@ nav:
   - Maven:
       - Was ist Maven?: maven_dateien/maven.md
       - pom.xml: maven_dateien/pom_xml.md
-      - jar.xml: maven_dateien/jar_xml.md          
+      - jar.xml: maven_dateien/jar_xml.md  
+  - BAZI Dateien:
+      - Start.java / main: bazi_dateien/start.java.md
+      - Resource.java: bazi_dateien/resource.java.md
+      - VersionControl.java: bazi_dateien/versioncontrol.java.md
+      #- driver Ordner: #todo
+      #- gui Ordner: #todo
+      #- lib Ordner: #todo
 
 
 
