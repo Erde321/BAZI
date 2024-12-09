@@ -2,11 +2,6 @@
 
 Diese Seite beschreibt die Funktionsweise und Struktur der `Start.java`-Datei des Projekts BAZI. Die Start.java enthält die main-Funktion für das Projekt.
 
-# Notizen die beim Verstehen des Code passieren
-
-Resource aus Resource.java wird genutzt um Resourcen zu speichern und zu laden ohne eine Instanz, weil static.
-Selbe für VersionControl.java ...
-
 ## Gesamter Code
 
 ```java
@@ -225,6 +220,8 @@ Der Code überprüft, ob sich die Anwendung in einer Test- oder einer Release-Ve
     - Wenn die Bedingung wahr ist, wird der Testlogger eingerichtet.
   - Andernfalls wird der Logger im Release-Modus deaktiviert.
 
+  VersionControl ist eine Klasse mit static Attributen und wird als Singleton genutzt, um die Version des Projekts zu verwalten.
+
 ---
 
 ### **Fall 1: Testversion**
@@ -282,10 +279,6 @@ Logger.getRootLogger().setLevel(Level.OFF);
 
 ---
 
-Hier ist die Beschreibung in zwei separate Abschnitte für **Verarbeitung** und **Initialisierung** aufgeteilt:
-
----
-
 ### **Verarbeitung von Programmargumenten**
 
 ```java
@@ -319,8 +312,6 @@ if (Start.logger.isTraceEnabled())
 ---
 
 ### **Initialisierung der Konfiguration**
-
-Hier ist der neu geschriebene Codeabschnitt mit klarer Struktur und Kommentaren:
 
 ```java
 boolean max = false;
@@ -398,18 +389,24 @@ new RoundFrame("Version " + VersionControl.getVersion(), max);
 
 ### **Erklärungen zu den Codeabschnitten**
 1. **JSON-Verarbeitung:**
-   - `Jackson.readJSON(jackson)` liest Konfigurationsdaten der Sprache aus der JSON-Datei.
+   - `Jackson.readJSON(jackson)` liest die Konfigurationsdatei preferences.json aus und speichert den Inhalt im Attribut der start-Klasse "jackson". Wenn keine preferences.json Datei gefunden wurde, werden default-Werte geladen.
    
 2. **Prüfen des Startdialogs:**
    - **Aktivierter Startdialog (`Language.getStartDialog() == true`):**
+     
+     Wenn noch kein Startfenster gestartet wurde, dann:
      - Ohne Argumente wird der Startdialog direkt geöffnet.
      - Mit Argumenten:
        - `"max"` im ersten oder zweiten Argument aktiviert den Vollbildmodus.
        - Andere Argumente setzen die Sprache.
-       - Falls keine Sprache festgelegt wird, öffnet sich der Startdialog.
+       - Falls keine Sprache festgelegt wird, öffnet sich der Startdialog, wie wenn keine Argumente mitgegeben wurden.
 
    - **Deaktivierter Startdialog (`Language.getStartDialog() == false`):**
      - Die Sprache wird direkt aus den JSON-Einstellungen geladen.
+
+     #### StartDialog()
+
+     Die Methode StartDialog aus der Klasse StartDialog, öffnet ein Fenster, wo man die Sprache auswählen kann. In dieser Methode wird die Sprache in die Resource und Language Klasse geschrieben.
 
 3. **Einstellungen speichern:**
    - Wenn der Startdialog aktiviert ist, speichert `Jackson.writeJSON(...)` die aktuellen UI- und Spracheinstellungen.

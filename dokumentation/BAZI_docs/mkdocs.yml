@@ -31,6 +31,8 @@ nav:
       - Start.java / main: bazi_dateien/start.java.md
       - Resource.java: bazi_dateien/resource.java.md
       - VersionControl.java: bazi_dateien/versioncontrol.java.md
+      - GUI Dateien:
+          - bazi_dateien/gui_dateien/aboutdialog.java.md
       #- driver Ordner: #todo
       #- gui Ordner: #todo
       #- lib Ordner: #todo
@@ -41,6 +43,7 @@ markdown_extensions:
   - admonition                       # Erweiterungen wie Hinweisboxen, z.B. für wichtige Informationen
   - codehilite                        # Codehervorhebung
   - toc                               # Eine automatisch generierte Tabelle des Inhalts
+  - attr_list
 
 plugins:
   - search                            # Das Search-Plugin für die integrierte Suchfunktion
