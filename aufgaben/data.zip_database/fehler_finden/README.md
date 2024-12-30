@@ -1,6 +1,6 @@
 # Fehler in den BAZI Dateien der Database
 
-Die Database besteht aus mehreren Bazi Dateien, welche entweder in UTF-8, ISO-8859-1 oder ISO-8859-7. Beim Erstellen dieser können Fehler passieren durch das Schreiben einer BAZI Datei in einer anderen Kodierung als vorgesehen. Zum Beispiel eine Datei geschrieben in UTF-8, aber sie wird als ISO-8859-1 interpretiert.
+Die Database besteht aus mehreren Bazi Dateien, welche entweder in UTF-8, ISO-8859-1 oder ISO-8859-7 kodiert sind. Beim Erstellen dieser können Fehler passieren durch das Schreiben einer BAZI Datei in einer anderen Kodierung als vorgesehen. Zum Beispiel eine Datei geschrieben in UTF-8, aber sie wird als ISO-8859-1 interpretiert.
 
 Das Python Programm in diesem Unterordner soll solche Fehler in Dateien, welche als ISO-8859-1 ausgelegt sind erkennen. Dabei werden UTF-8 und ISO-8859-7 Dateien ignoriert und es wird nach Zeichen gesucht, welche als Fehler bei ISO-8859-1 erscheinen können.
 
