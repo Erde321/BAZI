@@ -10,8 +10,8 @@ Zuerst habe ich nach dem Text im Über Fenster gesucht. Dabei bin ich auf 'bazi.
 
 Vor der Änderung:
 
-[bazi.properties vor Update 02.25]()
+[bazi.properties vor Update 01.25](../../../aufgaben_img/properties/bazi.properties/update_01.25/bazi.properties_before_update_01.25.png)
 
 Nach der Änderung:
 
-[bazi.properties vor Update 02.25]()
+[bazi.properties nach Update 01.25](../../../aufgaben_img/properties/bazi.properties/update_01.25/bazi.properties_update_01.25.png)

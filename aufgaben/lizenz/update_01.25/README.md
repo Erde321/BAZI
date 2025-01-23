@@ -12,10 +12,10 @@ Dies ist das erste Mal, dass ich Änderungen an der Lizenz vornehmen soll. Hierb
 
 ## Lizenz anpassen
 
-Lizenz vor der Änderung:
+gnugpl.txt vor der Änderung:
 
-![Lizenz vor Update 01.25](../../aufgaben_img/lizenz/lizenz_update_01.25/gnugpl.txt_before_update_01.25.png)
+![gnugpl.txt vor Update 01.25](../../aufgaben_img/lizenz/lizenz_update_01.25/gnugpl.txt_before_update_01.25.png)
 
 Lizenz nach der Änderung:
 
-![Lizenz vor Update 01.25](../../aufgaben_img/lizenz/lizenz_update_01.25/gnugpl.txt_update_01.25.png)
+![gnugpl.txt vor Update 01.25](../../aufgaben_img/lizenz/lizenz_update_01.25/gnugpl.txt_update_01.25.png)
