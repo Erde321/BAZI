@@ -13,3 +13,7 @@ This directory contains the documentation of BAZI made by me.
 ## **bazi_source_code**-directory
 
 This directory contains the code from the project BAZI Git Repository and a personal code which is for changes
+
+## **abgaben**-directory
+
+This directory contains the submission of my tasks for Prof. Dr. Wolfgang Bischof except the code.
